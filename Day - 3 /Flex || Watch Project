@@ -1,0 +1,137 @@
+Css:
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+nav 
+{
+    background-color: #0e302c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+nav ul
+{
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+}
+
+
+main
+{
+    height: calc(100vh - 50px);
+    background-image: url("https://images7.alphacoders.com/107/1078278.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Content
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 67%;
+    width: 89%;
+    background-color: rgba(0, 0, 0, 0.358);
+    border-radius: 20px;
+}
+
+#Content h1
+{
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+
+
+#Content p
+{
+    font-size: 23px;
+    margin-bottom: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+#Btn1
+{
+    padding: 10px 20px;
+    background-color: #0e302c;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+#Btn2
+{
+    padding: 10px 20px;
+    color: #0e302c;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+
+
+
+
+----------------------------HTML------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <link rel="stylesheet" href="./Main.css">
+</head>
+<body>
+
+   <nav>
+    <h2>Logo</h2>
+    <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Menu</li>
+        <li>Conatct</li>
+        <li>About</li>
+    </ul>
+   </nav>
+
+
+   <main>
+    <div id="Content">
+        <h1>Welcome to My Website</h1>
+        <p>This is my website. I'm using HTML, CSS, and JavaScript to create a responsive layout.</p>
+        <div id="Btns">
+            <button id = "Btn1" >Buy Now</button>
+            <button id = "Btn2" >Show More</button>
+        </div>
+    </div>
+   </main>
+
+
+</body>
+</html>
